@@ -1,83 +1,164 @@
 [
-  {
-      "id": 1,
-      "estate_title": "Lavish Seaside Villa",
-      "segment_name": "Seaside",
-      "description": "The Lavish Seaside Villa is a dream property located on a pristine stretch of coastline. This luxurious estate offers unparalleled ocean views that stretch as far as the eye can see. With private beach access, you can enjoy the sun, sand, and surf in complete privacy. The villa itself is a masterpiece of modern design, featuring expansive glass windows that let in natural light and provide breathtaking views of the ocean from nearly every room. The infinity pool seems to blend seamlessly into the horizon, offering a perfect spot to relax and unwind. Inside, the villa boasts five spacious bedrooms, each with its own en-suite bathroom, ensuring comfort and privacy for all guests. The modern kitchen is equipped with high-end appliances and ample space for preparing gourmet meals. The living areas are designed for both relaxation and entertainment, with plush seating, state-of-the-art technology, and elegant decor that exudes sophistication. Whether you're hosting a large gathering or enjoying a quiet evening with family, the Lavish Seaside Villa provides the perfect setting. The outdoor spaces are equally impressive, with landscaped gardens, a barbecue area, and multiple terraces for soaking up the sun or enjoying al fresco dining. This villa is not just a home; it's a lifestyle. From morning strolls on the beach to evening cocktails by the pool, every day here feels like a vacation. The Lavish Seaside Villa is ideal for those who desire luxury living in a serene and picturesque environment. With its prime location, stunning design, and top-of-the-line amenities, this property offers an unmatched coastal living experience that you will cherish for years to come.",
-      "price": 2500,
-      "status": "rent",
-      "image": "https://i.ibb.co/rwM7Y2K/image-1.jpg"
-  },
-  {
-      "id": 2,
-      "estate_title": "Penthouse in the Sky",
-      "segment_name": "Urban",
-      "description": "The Penthouse in the Sky offers a truly unparalleled urban living experience, located high above the bustling streets of the city. This exclusive penthouse is the epitome of luxury and sophistication, providing residents with breathtaking panoramic views of the city skyline from every corner of the property. The penthouse features four spacious bedrooms, each designed with comfort and style in mind. The master suite is a sanctuary of its own, with a private balcony, walk-in closet, and an opulent bathroom featuring a soaking tub and rain shower. The open-plan living and dining areas are perfect for entertaining, with floor-to-ceiling windows that flood the space with natural light and provide a stunning backdrop of the city's lights at night. The modern kitchen is a chef's dream, equipped with top-of-the-line appliances, custom cabinetry, and a large island that doubles as a breakfast bar. One of the highlights of this penthouse is the private rooftop terrace, offering an outdoor space that is both secluded and awe-inspiring. Here, you can enjoy alfresco dining, sunbathing, or simply taking in the view of the skyline as you relax in your own urban oasis. The terrace also provides the perfect setting for hosting gatherings or enjoying quiet evenings under the stars. Residents of this penthouse also have access to a range of exclusive amenities, including a fitness center, spa, concierge services, and secure parking. The location of the penthouse puts you in the heart of the city, with easy access to the finest dining, shopping, and entertainment options. Whether you're a professional looking for a prestigious residence or someone seeking the ultimate urban lifestyle, the Penthouse in the Sky offers a living experience that is second to none.",
-      "price": 4500,
-      "status": "rent",
-      "image": "https://i.ibb.co/wc0YMQD/image-1.jpg"
-  },
-  {
-      "id": 3,
-      "estate_title": "Mountain Retreat Chalet",
-      "segment_name": "Mountain",
-      "description": "The Mountain Retreat Chalet is a luxurious escape nestled in the heart of the mountains, offering a serene and tranquil environment for those seeking peace and natural beauty. This stunning property is designed to blend harmoniously with its surroundings, with rustic yet elegant architecture that reflects the charm of a traditional mountain chalet. The chalet features six bedrooms, each thoughtfully designed to provide comfort and warmth, with large windows that offer breathtaking views of the surrounding mountains. The master suite is a haven of relaxation, with a private balcony, a cozy fireplace, and a spa-like bathroom complete with a soaking tub and walk-in shower. The spacious living area is the heart of the chalet, featuring a grand stone fireplace that serves as the focal point, creating a warm and inviting atmosphere. The open-plan design allows for seamless flow between the living, dining, and kitchen areas, making it ideal for hosting family gatherings or intimate dinners. The kitchen is equipped with modern appliances and handcrafted cabinetry, perfect for preparing hearty meals after a day of exploring the great outdoors. One of the standout features of this chalet is the large outdoor deck, where you can take in the fresh mountain air and enjoy the stunning views of the surrounding landscape. Whether you're soaking in the hot tub, enjoying a meal at the outdoor dining area, or simply lounging with a book, this space offers the perfect setting for relaxation. The Mountain Retreat Chalet is more than just a home; it's a sanctuary where you can reconnect with nature and create lasting memories with family and friends. With its luxurious amenities, breathtaking views, and unparalleled location, this property offers a mountain living experience like no other.",
-      "price": 3000,
-      "status": "rent",
-      "image": "https://i.ibb.co/Jr1fmn7/image-2.jpg"
-  },
-  {
-      "id": 4,
-      "estate_title": "Countryside Manor",
-      "segment_name": "Countryside",
-      "description": "The Countryside Manor is a grand estate set in the heart of the tranquil countryside, offering an idyllic retreat from the hustle and bustle of city life. This magnificent property is surrounded by vast gardens, rolling hills, and a private lake, providing a picturesque setting that is perfect for those who appreciate the beauty of nature. The manor itself is a masterpiece of traditional architecture, with elegant details and high-quality finishes throughout. The estate features eight spacious bedrooms, each with its own unique charm and character. The master suite is particularly impressive, with a private sitting area, a large walk-in closet, and a luxurious en-suite bathroom. The manor's living spaces are equally grand, with high ceilings, large windows, and exquisite furnishings that create an atmosphere of elegance and sophistication. The formal dining room is perfect for hosting dinner parties, while the cozy family room offers a more relaxed setting for casual gatherings. The kitchen is a chef's dream, with professional-grade appliances, custom cabinetry, and a large island that provides ample space for meal preparation. One of the highlights of the Countryside Manor is the outdoor space, which is truly spectacular. The estate's gardens are meticulously maintained, with lush lawns, colorful flower beds, and mature trees that provide shade and privacy. The private lake is a serene spot for fishing, boating, or simply enjoying the peaceful surroundings. There is also a large patio area, perfect for outdoor dining and entertaining. Whether you're hosting a summer barbecue or enjoying a quiet evening under the stars, the outdoor spaces at Countryside Manor offer endless possibilities. This property is the epitome of country living at its finest, offering a perfect blend of luxury, comfort, and natural beauty.",
-      "price": 3500,
-      "status": "rent",
-      "image": "https://i.ibb.co/tptyHGr/image-2.jpg"
-  },
-  {
-      "id": 5,
-      "estate_title": "Modern Loft Apartment",
-      "segment_name": "Urban",
-      "description": "The Modern Loft Apartment is a stylish and contemporary residence located in a vibrant urban area, offering the perfect blend of comfort, convenience, and modern design. This loft apartment is designed for those who appreciate the finer things in life, with sleek lines, high ceilings, and an open-plan layout that maximizes space and natural light. The apartment features three bedrooms, each with large windows that offer stunning views of the city. The master bedroom is a tranquil retreat, with a walk-in closet and an en-suite bathroom that includes a luxurious soaking tub and a glass-enclosed shower. The living area is the heart of the apartment, with a spacious layout that is perfect for both relaxation and entertaining. The modern kitchen is a culinary enthusiast's dream, equipped with high-end appliances, custom cabinetry, and a large island that serves as both a workspace and a breakfast bar. The dining area, adjacent to the kitchen, is perfect for intimate dinners or larger gatherings with friends and family. One of the standout features of this loft is its attention to detail, with high-quality finishes, designer lighting, and carefully curated decor that creates a cohesive and stylish look throughout the apartment. The large windows not only provide beautiful views but also fill the space with natural light, enhancing the apartment's bright and airy feel. The building itself offers a range of amenities, including a fitness center, a rooftop terrace, and secure parking. The location of the Modern Loft Apartment is another major advantage, with easy access to the city's best dining, shopping, and entertainment options. Whether you're a young professional, a small family, or someone looking for a chic urban retreat, this loft apartment offers everything you need for a comfortable and luxurious lifestyle.",
-      "price": 2000,
-      "status": "rent",
-      "image": "https://i.ibb.co/YdXfgr7/image-3.jpg"
-  },
-  {
-      "id": 6,
-      "estate_title": "Historic Castle Estate",
-      "segment_name": "Countryside",
-      "description": "The Historic Castle Estate is a one-of-a-kind property that offers a rare opportunity to own a piece of history. This magnificent castle, dating back several centuries, has been meticulously restored to preserve its original architectural details while incorporating modern amenities for luxurious living. The estate is set on expansive grounds, with manicured gardens, ancient trees, and sweeping views of the surrounding countryside. The castle itself is a masterpiece of historic architecture, featuring grand stone walls, towering turrets, and ornate detailing that reflects its rich history. Inside, the castle offers 12 bedrooms, each uniquely decorated with period furnishings and luxurious touches. The master suite is a truly regal space, with a four-poster bed, a private sitting room, and an opulent bathroom complete with a clawfoot tub and a walk-in shower. The living areas are equally grand, with high ceilings, large fireplaces, and elegant decor that creates an atmosphere of timeless elegance. The formal dining room is perfect for hosting lavish dinner parties, while the cozy library offers a quiet retreat for reading or relaxation. The castle also features a modern kitchen, equipped with state-of-the-art appliances and ample space for preparing gourmet meals. One of the most impressive aspects of the Historic Castle Estate is its outdoor space. The estate's grounds are vast and beautifully landscaped, with rolling lawns, colorful gardens, and a private lake. There are several outdoor seating areas, perfect for enjoying the tranquil surroundings or hosting outdoor events. The castle also includes a range of amenities, such as a wine cellar, a fitness center, and a home theater, ensuring that you have everything you need for a comfortable and luxurious lifestyle. The Historic Castle Estate is more than just a home; it's a testament to the grandeur and elegance of a bygone era, offering a unique living experience that is truly unmatched.",
-      "price": 5000,
-      "status": "rent",
-      "image": "https://i.ibb.co/SdgCNBc/image-4.jpg"
-  },
-  {
-      "id": 7,
-      "estate_title": "Tropical Island Bungalow",
-      "segment_name": "Island",
-      "description": "The Tropical Island Bungalow is a charming and secluded retreat located on a private tropical island, offering the ultimate escape from the stresses of modern life. This bungalow is the epitome of island living, with its laid-back atmosphere, stunning natural surroundings, and easy access to pristine beaches. The property features two cozy bedrooms, each designed with comfort and relaxation in mind. The master bedroom opens directly onto a private terrace, where you can wake up to the sound of the waves and the sight of the sun rising over the ocean. The bungalow's open-plan living area is designed to make the most of the island's natural beauty, with large windows that let in plenty of light and provide stunning views of the ocean. The living area includes a comfortable seating area, a dining space, and a modern kitchen equipped with everything you need to prepare delicious meals. The decor throughout the bungalow is inspired by the natural beauty of the island, with earthy tones, wooden accents, and tropical-inspired artwork that create a warm and inviting atmosphere. One of the highlights of the Tropical Island Bungalow is its outdoor space, which is perfect for enjoying the island's natural beauty. The bungalow features a spacious deck with a seating area, a dining table, and a hammock where you can relax and soak up the sun. The deck is also the perfect spot for enjoying al fresco meals, whether you're having breakfast as the sun rises or a candlelit dinner under the stars. The bungalow's location on a private island means that you have direct access to the beach, where you can swim, snorkel, or simply relax on the sand. Whether you're looking for a romantic getaway or a peaceful retreat, the Tropical Island Bungalow offers the perfect setting for an unforgettable island experience.",
-      "price": 4000,
-      "status": "rent",
-      "image": "https://i.ibb.co/5h2Wmn4/image-5.jpg"
-  },
-  {
-      "id": 8,
-      "estate_title": "Lakeside Modern Mansion",
-      "segment_name": "Lakeside",
-      "description": "The Lakeside Modern Mansion is a stunning property that combines contemporary design with the serene beauty of lakeside living. This luxurious mansion is situated on a beautiful lakeside property, offering breathtaking views of the water from every room. The mansion features seven spacious bedrooms, each designed with comfort and style in mind. The master suite is a true sanctuary, with a private balcony overlooking the lake, a walk-in closet, and a luxurious en-suite bathroom with a soaking tub and a rain shower. The living areas of the mansion are designed for both relaxation and entertainment, with large windows that flood the space with natural light and provide stunning views of the lake. The open-plan living area includes a comfortable seating area, a formal dining room, and a state-of-the-art kitchen equipped with high-end appliances and custom cabinetry. One of the standout features of this mansion is the floor-to-ceiling windows that provide panoramic views of the lake, creating a seamless connection between the indoor and outdoor spaces. The outdoor space of the Lakeside Modern Mansion is equally impressive, with a large terrace, a private dock, and a beautifully landscaped garden. The terrace is the perfect spot for outdoor dining or simply relaxing and enjoying the peaceful surroundings. The private dock provides direct access to the lake, where you can enjoy a range of water activities, such as boating, fishing, or swimming. The mansion also includes a range of amenities, such as a home theater, a fitness center, and a wine cellar, ensuring that you have everything you need for a comfortable and luxurious lifestyle. Whether you're hosting a large gathering or enjoying a quiet evening with family, the Lakeside Modern Mansion offers the perfect setting for luxury lakeside living.",
-      "price": 3800,
-      "status": "rent",
-      "image": "https://i.ibb.co/wRDKt1W/image-6.jpg"
-  },
-  {
-      "id": 9,
-      "estate_title": "Desert Oasis Villa",
-      "segment_name": "Desert",
-      "description": "The Desert Oasis Villa is a luxurious retreat located in the heart of the desert, offering a unique living experience surrounded by stunning natural landscapes. This villa is designed for those who appreciate solitude, natural beauty, and the tranquility of the desert. The property features four spacious bedrooms, each with large windows that offer stunning views of the surrounding desert. The master suite is a true oasis, with a private terrace, a walk-in closet, and a luxurious en-suite bathroom with a soaking tub and a rain shower. The villa's living areas are designed for both relaxation and entertainment, with an open-plan layout that allows for seamless flow between the living, dining, and kitchen areas. The living area features a large fireplace, perfect for cozy evenings, and floor-to-ceiling windows that let in plenty of natural light and provide stunning views of the desert. The kitchen is a chef's dream, with high-end appliances, custom cabinetry, and a large island that serves as both a workspace and a breakfast bar. One of the standout features of the Desert Oasis Villa is its outdoor space, which is perfect for enjoying the beauty of the desert. The villa features a large patio with a private pool, a seating area, and a dining table, where you can relax and soak up the sun. The patio is also the perfect spot for enjoying al fresco meals, whether you're having breakfast as the sun rises over the desert or a candlelit dinner under the stars. The villa's location in the heart of the desert means that you can enjoy complete privacy and tranquility, with the stunning desert landscape providing a breathtaking backdrop to your daily life. Whether you're looking for a peaceful retreat or a luxurious vacation home, the Desert Oasis Villa offers the perfect setting for a truly unforgettable desert experience.",
-      "price": 3200,
-      "status": "rent",
-      "image": "https://i.ibb.co/5457310/image-7.jpg"
-  }
+    {
+        "id": 1,
+        "estate_title": "Lavish Seaside Villa",
+        "segment_name": "Seaside",
+        "description": "The Lavish Seaside Villa is a dream property located on a pristine stretch of coastline. This luxurious estate offers unparalleled ocean views that stretch as far as the eye can see. With private beach access, you can enjoy the sun, sand, and surf in complete privacy. The villa itself is a masterpiece of modern design, featuring expansive glass windows that let in natural light and provide breathtaking views of the ocean from nearly every room. The infinity pool seems to blend seamlessly into the horizon, offering a perfect spot to relax and unwind. Inside, the villa boasts five spacious bedrooms, each with its own en-suite bathroom, ensuring comfort and privacy for all guests. The modern kitchen is equipped with high-end appliances and ample space for preparing gourmet meals. The living areas are designed for both relaxation and entertainment, with plush seating, state-of-the-art technology, and elegant decor that exudes sophistication. Whether you're hosting a large gathering or enjoying a quiet evening with family, the Lavish Seaside Villa provides the perfect setting. The outdoor spaces are equally impressive, with landscaped gardens, a barbecue area, and multiple terraces for soaking up the sun or enjoying al fresco dining. This villa is not just a home; it's a lifestyle. From morning strolls on the beach to evening cocktails by the pool, every day here feels like a vacation. The Lavish Seaside Villa is ideal for those who desire luxury living in a serene and picturesque environment. With its prime location, stunning design, and top-of-the-line amenities, this property offers an unmatched coastal living experience that you will cherish for years to come.",
+        "price": 2500,
+        "status": "rent",
+        "image": "https://i.ibb.co/rwM7Y2K/image-1.jpg",
+        "area": "4500 sqft",
+        "location": "Coastal Drive, Malibu, California",
+        "facilities": [
+            "living room",
+            "swimming pool",
+            "kitchen",
+            "private beach access",
+            "landscaped gardens"
+        ]
+    },
+    {
+        "id": 2,
+        "estate_title": "Penthouse in the Sky",
+        "segment_name": "Urban",
+        "description": "The Penthouse in the Sky offers a truly unparalleled urban living experience, located high above the bustling streets of the city. This exclusive penthouse is the epitome of luxury and sophistication, providing residents with breathtaking panoramic views of the city skyline from every corner of the property. The penthouse features four spacious bedrooms, each designed with comfort and style in mind. The master suite is a sanctuary of its own, with a private balcony, walk-in closet, and an opulent bathroom featuring a soaking tub and rain shower. The open-plan living and dining areas are perfect for entertaining, with floor-to-ceiling windows that flood the space with natural light and provide a stunning backdrop of the city's lights at night. The modern kitchen is a chef's dream, equipped with top-of-the-line appliances, custom cabinetry, and a large island that doubles as a breakfast bar. One of the highlights of this penthouse is the private rooftop terrace, offering an outdoor space that is both secluded and awe-inspiring. Here, you can enjoy alfresco dining, sunbathing, or simply taking in the view of the skyline as you relax in your own urban oasis. The terrace also provides the perfect setting for hosting gatherings or enjoying quiet evenings under the stars. Residents of this penthouse also have access to a range of exclusive amenities, including a fitness center, spa, concierge services, and secure parking. The location of the penthouse puts you in the heart of the city, with easy access to the finest dining, shopping, and entertainment options. Whether you're a professional looking for a prestigious residence or someone seeking the ultimate urban lifestyle, the Penthouse in the Sky offers a living experience that is second to none.",
+        "price": 4500,
+        "status": "rent",
+        "image": "https://i.ibb.co/wc0YMQD/image-1.jpg",
+        "area": "3000 sqft",
+        "location": "Downtown, New York City, New York",
+        "facilities": [
+            "living room",
+            "private rooftop terrace",
+            "kitchen",
+            "fitness center",
+            "secure parking"
+        ]
+    },
+    {
+        "id": 3,
+        "estate_title": "Mountain Retreat Chalet",
+        "segment_name": "Mountain",
+        "description": "The Mountain Retreat Chalet is a luxurious escape nestled in the heart of the mountains, offering a serene and tranquil environment for those seeking peace and natural beauty. This stunning property is designed to blend harmoniously with its surroundings, with rustic yet elegant architecture that reflects the charm of a traditional mountain chalet. The chalet features six bedrooms, each thoughtfully designed to provide comfort and warmth, with large windows that offer breathtaking views of the surrounding mountains. The master suite is a haven of relaxation, with a private balcony, a cozy fireplace, and a spa-like bathroom complete with a soaking tub and walk-in shower. The spacious living area is the heart of the chalet, featuring a grand stone fireplace that serves as the focal point, creating a warm and inviting atmosphere. The open-plan design allows for seamless flow between the living, dining, and kitchen areas, making it ideal for hosting family gatherings or intimate dinners. The kitchen is equipped with modern appliances and handcrafted cabinetry, perfect for preparing hearty meals after a day of exploring the great outdoors. One of the standout features of this chalet is the large outdoor deck, where you can take in the fresh mountain air and enjoy the stunning views of the surrounding landscape. Whether you're soaking in the hot tub, enjoying a meal at the outdoor dining area, or simply lounging with a book, this space offers the perfect setting for relaxation. The Mountain Retreat Chalet is more than just a home; it's a sanctuary where you can reconnect with nature and create lasting memories with family and friends. With its luxurious amenities, breathtaking views, and unparalleled location, this property offers a mountain living experience like no other.",
+        "price": 3000,
+        "status": "rent",
+        "image": "https://i.ibb.co/Jr1fmn7/image-2.jpg",
+        "area": "5000 sqft",
+        "location": "Rocky Mountains, Colorado",
+        "facilities": [
+            "living room",
+            "outdoor deck",
+            "kitchen",
+            "hot tub",
+            "fireplace"
+        ]
+    },
+    {
+        "id": 4,
+        "estate_title": "Countryside Manor",
+        "segment_name": "Countryside",
+        "description": "The Countryside Manor is a grand estate set in the heart of the tranquil countryside, offering an idyllic retreat from the hustle and bustle of city life. This magnificent property is surrounded by vast gardens, rolling hills, and a private lake, providing a picturesque setting that is perfect for those who appreciate the beauty of nature. The manor itself is a masterpiece of traditional architecture, with elegant details and high-quality finishes throughout. The estate features eight spacious bedrooms, each with its own unique charm and character. The master suite is particularly impressive, with a private sitting area, a large walk-in closet, and a luxurious en-suite bathroom. The manor's living spaces are equally grand, with high ceilings, large windows, and exquisite furnishings that create an atmosphere of elegance and sophistication. The formal dining room is perfect for hosting dinner parties, while the cozy family room offers a more relaxed setting for casual gatherings. The kitchen is a chef's dream, with professional-grade appliances, custom cabinetry, and a large island that provides ample space for meal preparation. One of the highlights of the Countryside Manor is the outdoor space, which is truly spectacular. The estate's gardens are meticulously maintained, with lush lawns, colorful flower beds, and mature trees that provide shade and privacy. The private lake is a serene spot for fishing, boating, or simply enjoying the peaceful surroundings. There is also a large patio area, perfect for outdoor dining and entertaining. Whether you're hosting a summer barbecue or enjoying a quiet evening under the stars, the outdoor spaces at Countryside Manor offer endless possibilities. This property is the epitome of country living at its finest, offering a perfect blend of luxury, comfort, and natural beauty.",
+        "price": 3500,
+        "status": "rent",
+        "image": "https://i.ibb.co/tptyHGr/image-2.jpg",
+        "area": "8000 sqft",
+        "location": "Cotswolds, England",
+        "facilities": [
+            "living room",
+            "private lake",
+            "kitchen",
+            "formal dining room",
+            "landscaped gardens"
+        ]
+    },
+    {
+        "id": 5,
+        "estate_title": "Modern Loft Apartment",
+        "segment_name": "Urban",
+        "description": "The Modern Loft Apartment is a stylish and contemporary residence located in a vibrant urban area, offering the perfect blend of comfort, convenience, and modern design. This loft apartment is designed for those who appreciate the finer things in life, with sleek lines, high ceilings, and an open-plan layout that maximizes space and natural light. The apartment features three bedrooms, each with large windows that offer stunning views of the city. The master bedroom is a tranquil retreat, with a walk-in closet and an en-suite bathroom that includes a luxurious soaking tub and a glass-enclosed shower. The living area is the heart of the apartment, with a spacious layout that is perfect for both relaxation and entertaining. The modern kitchen is a culinary enthusiast's dream, equipped with high-end appliances, custom cabinetry, and a large island that serves as both a workspace and a breakfast bar. The dining area, adjacent to the kitchen, is perfect for intimate dinners or larger gatherings with friends and family. One of the standout features of this loft is its attention to detail, with high-quality finishes, designer lighting, and carefully curated decor that creates a cohesive and stylish look throughout the apartment. The large windows not only provide beautiful views but also fill the space with natural light, enhancing the apartment's bright and airy feel. The building itself offers a range of amenities, including a fitness center, a rooftop terrace, and secure parking. The location of the Modern Loft Apartment is another major advantage, with easy access to the city's best dining, shopping, and entertainment options. Whether you're a young professional, a small family, or someone looking for a chic urban retreat, this loft apartment offers everything you need for a comfortable and luxurious lifestyle.",
+        "price": 2000,
+        "status": "rent",
+        "image": "https://i.ibb.co/YdXfgr7/image-3.jpg",
+        "area": "1800 sqft",
+        "location": "SoHo, New York City, New York",
+        "facilities": [
+            "living room",
+            "kitchen",
+            "fitness center",
+            "rooftop terrace",
+            "secure parking"
+        ]
+    },
+    {
+        "id": 6,
+        "estate_title": "Historic Castle Estate",
+        "segment_name": "Countryside",
+        "description": "The Historic Castle Estate is a one-of-a-kind property that offers a rare opportunity to own a piece of history. This magnificent castle, dating back several centuries, has been meticulously restored to preserve its original architectural details while incorporating modern amenities for luxurious living. The estate is set on expansive grounds, with manicured gardens, ancient trees, and sweeping views of the surrounding countryside. The castle itself is a masterpiece of historic architecture, featuring grand stone walls, towering turrets, and ornate detailing that reflects its rich history. Inside, the castle offers 12 bedrooms, each uniquely decorated with period furnishings and luxurious touches. The master suite is a truly regal space, with a four-poster bed, a private sitting room, and an opulent bathroom complete with a clawfoot tub and a walk-in shower. The living areas are equally grand, with high ceilings, large fireplaces, and elegant decor that creates an atmosphere of timeless elegance. The formal dining room is perfect for hosting lavish dinner parties, while the cozy library offers a quiet retreat for reading or relaxation. The castle also features a modern kitchen, equipped with state-of-the-art appliances and ample space for preparing gourmet meals. One of the most impressive aspects of the Historic Castle Estate is its outdoor space. The estate's grounds are vast and beautifully landscaped, with rolling lawns, colorful gardens, and a private lake. There are several outdoor seating areas, perfect for enjoying the tranquil surroundings or hosting outdoor events. The castle also includes a range of amenities, such as a wine cellar, a fitness center, and a home theater, ensuring that you have everything you need for a comfortable and luxurious lifestyle. The Historic Castle Estate is more than just a home; it's a testament to the grandeur and elegance of a bygone era, offering a unique living experience that is truly unmatched.",
+        "price": 5000,
+        "status": "rent",
+        "image": "https://i.ibb.co/SdgCNBc/image-4.jpg",
+        "area": "15000 sqft",
+        "location": "Loire Valley, France",
+        "facilities": [
+            "living room",
+            "wine cellar",
+            "kitchen",
+            "library",
+            "home theater"
+        ]
+    },
+    {
+        "id": 7,
+        "estate_title": "Tropical Island Bungalow",
+        "segment_name": "Island",
+        "description": "The Tropical Island Bungalow is a charming and secluded retreat located on a private tropical island, offering the ultimate escape from the stresses of modern life. This bungalow is the epitome of island living, with its laid-back atmosphere, stunning natural surroundings, and easy access to pristine beaches. The property features two cozy bedrooms, each designed with comfort and relaxation in mind. The master bedroom opens directly onto a private terrace, where you can wake up to the sound of the waves and the sight of the sun rising over the ocean. The bungalow's open-plan living area is designed to make the most of the island's natural beauty, with large windows that let in plenty of light and provide stunning views of the ocean. The living area includes a comfortable seating area, a dining space, and a modern kitchen equipped with everything you need to prepare delicious meals. The decor throughout the bungalow is inspired by the natural beauty of the island, with earthy tones, wooden accents, and tropical-inspired artwork that create a warm and inviting atmosphere. One of the highlights of the Tropical Island Bungalow is its outdoor space, which is perfect for enjoying the island's natural beauty. The bungalow features a spacious deck with a seating area, a dining table, and a hammock where you can relax and soak up the sun. The deck is also the perfect spot for enjoying al fresco meals, whether you're having breakfast as the sun rises or a candlelit dinner under the stars. The bungalow's location on a private island means that you have direct access to the beach, where you can swim, snorkel, or simply relax on the sand. Whether you're looking for a romantic getaway or a peaceful retreat, the Tropical Island Bungalow offers the perfect setting for an unforgettable island experience.",
+        "price": 4000,
+        "status": "rent",
+        "image": "https://i.ibb.co/5h2Wmn4/image-5.jpg",
+        "area": "2200 sqft",
+        "location": "Private Island, Maldives",
+        "facilities": [
+            "living room",
+            "private terrace",
+            "kitchen",
+            "beach access",
+            "hammock"
+        ]
+    },
+    {
+        "id": 8,
+        "estate_title": "Lakeside Modern Mansion",
+        "segment_name": "Lakeside",
+        "description": "The Lakeside Modern Mansion is a stunning property that combines contemporary design with the serene beauty of lakeside living. This luxurious mansion is situated on a beautiful lakeside property, offering breathtaking views of the water from every room. The mansion features seven spacious bedrooms, each designed with comfort and style in mind. The master suite is a true sanctuary, with a private balcony overlooking the lake, a walk-in closet, and a luxurious en-suite bathroom with a soaking tub and a rain shower. The living areas of the mansion are designed for both relaxation and entertainment, with large windows that flood the space with natural light and provide stunning views of the lake. The open-plan living area includes a comfortable seating area, a formal dining room, and a state-of-the-art kitchen equipped with high-end appliances and custom cabinetry. One of the standout features of this mansion is the floor-to-ceiling windows that provide panoramic views of the lake, creating a seamless connection between the indoor and outdoor spaces. The outdoor space of the Lakeside Modern Mansion is equally impressive, with a large terrace, a private dock, and a beautifully landscaped garden. The terrace is the perfect spot for outdoor dining or simply relaxing and enjoying the peaceful surroundings. The private dock provides direct access to the lake, where you can enjoy a range of water activities, such as boating, fishing, or swimming. The mansion also includes a range of amenities, such as a home theater, a fitness center, and a wine cellar, ensuring that you have everything you need for a comfortable and luxurious lifestyle. Whether you're hosting a large gathering or enjoying a quiet evening with family, the Lakeside Modern Mansion offers the perfect setting for luxury lakeside living.",
+        "price": 3800,
+        "status": "rent",
+        "image": "https://i.ibb.co/wRDKt1W/image-6.jpg",
+        "area": "6000 sqft",
+        "location": "Lake Tahoe, California",
+        "facilities": [
+            "living room",
+            "private dock",
+            "kitchen",
+            "home theater",
+            "wine cellar"
+        ]
+    },
+    {
+        "id": 9,
+        "estate_title": "Desert Oasis Villa",
+        "segment_name": "Desert",
+        "description": "The Desert Oasis Villa is a luxurious retreat located in the heart of the desert, offering a unique living experience surrounded by stunning natural landscapes. This villa is designed for those who appreciate solitude, natural beauty, and the tranquility of the desert. The property features four spacious bedrooms, each with large windows that offer stunning views of the surrounding desert. The master suite is a true oasis, with a private terrace, a walk-in closet, and a luxurious en-suite bathroom with a soaking tub and a rain shower. The villa's living areas are designed for both relaxation and entertainment, with an open-plan layout that allows for seamless flow between the living, dining, and kitchen areas. The living area features a large fireplace, perfect for cozy evenings, and floor-to-ceiling windows that let in plenty of natural light and provide stunning views of the desert. The kitchen is a chef's dream, with high-end appliances, custom cabinetry, and a large island that serves as both a workspace and a breakfast bar. One of the standout features of the Desert Oasis Villa is its outdoor space, which is perfect for enjoying the beauty of the desert. The villa features a large patio with a private pool, a seating area, and a dining table, where you can relax and soak up the sun. The patio is also the perfect spot for enjoying al fresco meals, whether you're having breakfast as the sun rises over the desert or a candlelit dinner under the stars. The villa's location in the heart of the desert means that you can enjoy complete privacy and tranquility, with the stunning desert landscape providing a breathtaking backdrop to your daily life. Whether you're looking for a peaceful retreat or a luxurious vacation home, the Desert Oasis Villa offers the perfect setting for a truly unforgettable desert experience.",
+        "price": 3200,
+        "status": "rent",
+        "image": "https://i.ibb.co/5457310/image-7.jpg",
+        "area": "4000 sqft",
+        "location": "Palm Springs, California",
+        "facilities": [
+            "living room",
+            "private pool",
+            "kitchen",
+            "patio",
+            "fireplace"
+        ]
+    }
 ]

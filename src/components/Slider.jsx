@@ -10,6 +10,31 @@ const Slide = ({ properties }) => {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
     };
 
 
@@ -19,15 +44,14 @@ const Slide = ({ properties }) => {
 
                 {
                     properties.map((property, key) => {
-                        console.log('working')
                         return (
 
                             <div
-                                className="w-full h-80"
+                                className="w-full min-w-full"
                                 key={key}
                                 id={property.id} >
                                 <img
-                                    className={`w-full h-full object-cover px-5`}
+                                    className={`w-full h-[40vh] mt-4 object-cover px-5`}
                                     src={property.image}
                                     alt={`${property.name} image`}
                                 />

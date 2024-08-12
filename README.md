@@ -16,4 +16,5 @@ The npm packeges used in this assignment:
 4. Tailwind
 5. Slick-carousel
 6. React prop-types
-7. 
+7. AOS
+8. 
