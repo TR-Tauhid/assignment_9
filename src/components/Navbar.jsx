@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const links =
         <>
-            <li> <Link to="/home">Home</Link></li>
+            <li> <Link to="/">Home</Link></li>
             <li>
                 <Link to="/updateprofile">Update Profile</Link>
 
@@ -12,7 +12,7 @@ const Navbar = () => {
         </>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 mx-auto w-11/12">
                 <div className="navbar-start">
 
                     <div className="dropdown">
@@ -35,8 +35,8 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <div className="w-24 h-16">
-                        <a className=""><img src="/src/assets/logo.png" alt="logo" /> </a>
+                    <div className="w-32 h-20 items-center flex">
+                        <a className=""><img src="/src/assets/logo.svg" alt="logo" /> </a>
                     </div>
                 </div>
 

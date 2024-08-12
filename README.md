@@ -7,3 +7,13 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # assignment_9
+
+
+The npm packeges used in this assignment:
+1. React Router Dom
+2. Firebase
+3. Daisy UI
+4. Tailwind
+5. Slick-carousel
+6. React prop-types
+7. 

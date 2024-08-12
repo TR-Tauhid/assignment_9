@@ -5,9 +5,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Home';
+import Home from './components/Home';
 import Root from './Root';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import properties from './assets/properties.json'
 
 const router = createBrowserRouter([
   {
@@ -15,8 +17,11 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     children: [
       {
-        path: "/home",
-        element: <Home></Home>
+        path: "/",
+        loader: () => {
+          return  properties ;
+        },
+        element: <Home></Home>,
       }
     ]
   },
