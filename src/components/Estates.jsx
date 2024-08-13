@@ -5,15 +5,9 @@ import { GrMapLocation } from 'react-icons/gr';
 import { IoPricetagOutline } from 'react-icons/io5';
 import { MdDriveFileRenameOutline } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 const Estates = ({ properties }) => {
 
 
-    useEffect(() => {
-        AOS.init({});
-    }, []) 
     return (
         <div className="mt-20">
 
@@ -27,55 +21,91 @@ const Estates = ({ properties }) => {
                                 <div
                                     data-aos="fade-left"
                                     data-aos-duration="2000"
-                                    className="card card-side bg-base-100 my-5 flex-col lg:flex-row drop-shadow-2xl justify-around" key={key}>
+                                    className="card card-side bg-base-100 my-5 flex-col lg:flex-row-reverse drop-shadow-2xl justify-around" key={key}>
                                     <figure className='w-full grow'>
                                         <img
                                             data-aos="zoom-in"
                                             data-aos-delay="500"
                                             data-aos-easing="ease-in-sine"
-                                            className='p-12 rounded-[4rem] grow h-full'
+                                            className='p-4 md:p-12 rounded-[2rem] md:rounded-[4rem] grow h-full'
                                             src={property.image}
                                             alt={property.name} />
                                     </figure>
                                     <div className="card-body text-left lg:max-w-[40%]">
 
-                                        <h2 className="card-title ">{property.estate_title}</h2>
+                                        <h2
+                                            data-aos="fade-left"
+                                            data-aos-delay="700"
+                                            className="card-title ">{property.estate_title}</h2>
                                         {
                                             property.description.length > 500 ?
                                                 (
-                                                    <p>
+                                                    <p
+                                                        data-aos="fade-left"
+                                                        data-aos-delay="800"
+                                                    >
                                                         {property.description.slice(0, 200)}...<button>See more</button>
                                                     </p>
                                                 )
                                                 :
                                                 (
-                                                    property.description
+                                                    <p
+                                                        data-aos-delay="800"
+                                                    >
+                                                        {property.description}
+                                                    </p>
                                                 )
                                         }
 
-                                        <div className='flex items-center'>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="900"
+                                            className='flex items-center'>
                                             <MdDriveFileRenameOutline /><p className='pl-4'>{property.segment_name}</p>
                                         </div>
-                                        <div className='flex items-center'>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1000"
+                                            className='flex items-center'>
                                             <IoPricetagOutline /><h2 className='pl-4'>${property.price}</h2>
                                         </div>
-                                        <div className='flex items-center'>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1100"
+                                            className='flex items-center'>
                                             <GoChecklist /><p className='pl-4'>Status: {property.status}</p>
                                         </div>
-                                        <div className='flex items-center'>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1200"
+                                            className='flex items-center'>
                                             <BiArea /><p className='pl-4'>{property.area}</p>
                                         </div>
-                                        <div className='flex items-center'>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1300"
+                                            className='flex items-center'>
                                             <GrMapLocation /><p className='pl-4'>{property.location}</p>
                                         </div>
 
-                                        <ul className='list-disc'>
+                                        <h3 
+                                            className='card-title'
+                                            data-aos="fade-left"
+                                            data-aos-delay="1250"
+                                        >Facalities:</h3>
+                                        <ul
+                                            data-aos="fade-left"
+                                            data-aos-delay="1400"
+                                            className='list-disc ml-6 pl-3'>
                                             {property.facilities.map((facility, key) => {
                                                 return <li key={key}>{facility}</li>
                                             })}
                                         </ul>
 
-                                        <div className="card-actions justify-end">
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1450"
+                                            className="card-actions justify-end">
                                             <button className="btn btn-primary justify-end">View Property</button>
                                         </div>
                                     </div>
@@ -85,63 +115,98 @@ const Estates = ({ properties }) => {
                                 :
                                 (
                                     <div
-                                        data-aos="fade-right"
-                                        data-aos-duration="2000"
-                                        className="card card-side bg-base-100 my-5 drop-shadow-2xl flex-col justify-around lg:flex-row-reverse " key={key}>
-                                        <figure className='w-full grow'>
-                                            <img
-                                                data-aos="zoom-in"
-                                                data-aos-delay="500"
-                                                data-aos-easing="ease-in-sine"
-                                                className='p-12 rounded-[4rem] grow h-full'
-                                                src={property.image}
-                                                alt={property.name} />
-                                        </figure>
-                                        <div className="card-body lg:text-left lg:max-w-[40%]">
+                                    data-aos="fade-left"
+                                    data-aos-duration="2000"
+                                    className="card card-side bg-base-100 my-5 flex-col lg:flex-row drop-shadow-2xl justify-around" key={key}>
+                                    <figure className='w-full grow'>
+                                        <img
+                                            data-aos="zoom-in"
+                                            data-aos-delay="500"
+                                            data-aos-easing="ease-in-sine"
+                                            className='p-4 md:p-12 rounded-[2rem] md:rounded-[4rem] grow h-full'
+                                            src={property.image}
+                                            alt={property.name} />
+                                    </figure>
 
-                                            <h2 className="card-title lg:text-left">{property.estate_title}</h2>
-                                            {
-                                                property.description.length > 500 ?
-                                                    (
-                                                        <p>
+                                    <div className="card-body text-left lg:max-w-[40%]">
 
-                                                            {property.description.slice(0, 500)}...<button>See more</button>
-                                                        </p>
-                                                    )
-                                                    :
-                                                    (
-                                                        property.description
-                                                    )
-                                            }
+                                        <h2
+                                            data-aos="fade-left"
+                                            data-aos-delay="700"
+                                            className="card-title ">{property.estate_title}</h2>
+                                        {
+                                            property.description.length > 500 ?
+                                                (
+                                                    <p
+                                                        data-aos="fade-left"
+                                                        data-aos-delay="800"
+                                                    >
+                                                        {property.description.slice(0, 200)}...<button>See more</button>
+                                                    </p>
+                                                )
+                                                :
+                                                (
+                                                    <p
+                                                        data-aos-delay="800"
+                                                    >
+                                                        {property.description}
+                                                    </p>
+                                                )
+                                        }
 
-                                            <div className='flex items-center'>
-                                                <MdDriveFileRenameOutline /><p className='pl-4'>{property.segment_name}</p>
-                                            </div>
-                                            <div className='flex items-center'>
-                                                <IoPricetagOutline /><h2 className='pl-4'>${property.price}</h2>
-                                            </div>
-                                            <div className='flex items-center'>
-                                                <GoChecklist /><p className='pl-4'>Status: {property.status}</p>
-                                            </div>
-                                            <div className='flex items-center'>
-                                                <BiArea /><p className='pl-4'>{property.area}</p>
-                                            </div>
-                                            <div className='flex items-center'>
-                                                <GrMapLocation /><p className='pl-4'>{property.location}</p>
-                                            </div>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="900"
+                                            className='flex items-center'>
+                                            <MdDriveFileRenameOutline /><p className='pl-4'>{property.segment_name}</p>
+                                        </div>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1000"
+                                            className='flex items-center'>
+                                            <IoPricetagOutline /><h2 className='pl-4'>${property.price}</h2>
+                                        </div>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1100"
+                                            className='flex items-center'>
+                                            <GoChecklist /><p className='pl-4'>Status: {property.status}</p>
+                                        </div>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1200"
+                                            className='flex items-center'>
+                                            <BiArea /><p className='pl-4'>{property.area}</p>
+                                        </div>
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1300"
+                                            className='flex items-center'>
+                                            <GrMapLocation /><p className='pl-4'>{property.location}</p>
+                                        </div>
 
-                                            <ul className='list-disc'>
-                                                {property.facilities.map((facility, key) => {
-                                                    return <li key={key}>{facility}</li>
-                                                })}
-                                            </ul>
-                                            <div className="card-actions justify-start">
-                                                <Link to="/estatedetail">
-                                                    <button className="btn btn-primary ">View Property</button>
-                                                </Link>
-                                            </div>
+                                        <h3 
+                                            className='card-title'
+                                            data-aos="fade-left"
+                                            data-aos-delay="1250"
+                                        >Facalities:</h3>
+                                        <ul
+                                            data-aos="fade-left"
+                                            data-aos-delay="1400"
+                                            className='list-disc ml-6 pl-3'>
+                                            {property.facilities.map((facility, key) => {
+                                                return <li key={key}>{facility}</li>
+                                            })}
+                                        </ul>
+
+                                        <div
+                                            data-aos="fade-left"
+                                            data-aos-delay="1450"
+                                            className="card-actions justify-end">
+                                            <button className="btn btn-primary justify-end">View Property</button>
                                         </div>
                                     </div>
+                                </div>
                                 )
                         )
                     })

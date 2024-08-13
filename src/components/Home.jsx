@@ -2,8 +2,9 @@ import Estates from "./Estates";
 import Slide from "./Slider";
 import { useLoaderData } from "react-router-dom";
 
-
 const Home = () => {
+
+
     const properties = useLoaderData();
 
     return (

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
     const links =
         <>
             <li> <Link to="/">Home</Link></li>
@@ -36,7 +37,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="w-32 h-20 items-center flex">
-                        <a className=""><img src="/src/assets/logo.svg" alt="logo" /> </a>
+                        <a><img src="/src/assets/logo.svg" alt="logo" /> </a>
                     </div>
                 </div>
 
