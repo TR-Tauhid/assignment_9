@@ -17,4 +17,5 @@ The npm packeges used in this assignment:
 5. Slick-carousel
 6. React prop-types
 7. AOS
-8. 
+8. React Leaflet
+9. 
