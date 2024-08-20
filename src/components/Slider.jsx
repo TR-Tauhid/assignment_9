@@ -51,6 +51,7 @@ const Slide = ({ properties }) => {
                 data-aos-anchor="#example-anchor"
                 data-aos-offset="500"
                 data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom"
                 className="w-full min-w-full"
                 key={key}
                 id={property.id} >

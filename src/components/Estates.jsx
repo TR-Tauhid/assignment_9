@@ -22,12 +22,12 @@ const Estates = ({ properties }) => {
 
                                 <div
                                     data-aos="fade-left"
-                                    data-aos-duration="2000"
+                                    data-aos-anchor-placement="top-bottom"
                                     className="card card-side bg-base-100 my-5 flex-col lg:flex-row-reverse drop-shadow-2xl justify-around" key={key}>
                                     <figure className='w-full grow'>
                                         <img
                                             data-aos="zoom-in"
-                                            data-aos-delay="300"
+                                            data-aos-delay="100"
                                             data-aos-easing="ease-in-sine"
                                             className='p-4 md:p-12 rounded-[2rem] md:rounded-[4rem] grow h-full'
                                             src={property.image}
@@ -37,14 +37,14 @@ const Estates = ({ properties }) => {
 
                                         <h2
                                             data-aos="fade-left"
-                                            data-aos-delay="350"
+                                            data-aos-delay="150"
                                             className="card-title ">{property.estate_title}</h2>
                                         {
                                             property.description.length > 500 ?
                                                 (
                                                     <p
                                                         data-aos="fade-left"
-                                                        data-aos-delay="400"
+                                                        data-aos-delay="200"
                                                     >
                                                         {property.description.slice(0, 200)}...<button>See more</button>
                                                     </p>
@@ -52,7 +52,7 @@ const Estates = ({ properties }) => {
                                                 :
                                                 (
                                                     <p
-                                                        data-aos-delay="450"
+                                                        data-aos-delay="250"
                                                     >
                                                         {property.description}
                                                     </p>
@@ -61,31 +61,31 @@ const Estates = ({ properties }) => {
 
                                         <div
                                             data-aos="fade-left"
-                                            data-aos-delay="500"
+                                            data-aos-delay="300"
                                             className='flex items-center'>
                                             <MdDriveFileRenameOutline /><p className='pl-4'>{property.segment_name}</p>
                                         </div>
                                         <div
                                             data-aos="fade-left"
-                                            data-aos-delay="600"
+                                            data-aos-delay="350"
                                             className='flex items-center'>
                                             <IoPricetagOutline /><h2 className='pl-4'>${property.price}</h2>
                                         </div>
                                         <div
                                             data-aos="fade-left"
-                                            data-aos-delay="700"
+                                            data-aos-delay="400"
                                             className='flex items-center'>
                                             <GoChecklist /><p className='pl-4'>Status: {property.status}</p>
                                         </div>
                                         <div
                                             data-aos="fade-left"
-                                            data-aos-delay="800"
+                                            data-aos-delay="450"
                                             className='flex items-center'>
                                             <BiArea /><p className='pl-4'>{property.area}</p>
                                         </div>
                                         <div
                                             data-aos="fade-left"
-                                            data-aos-delay="900"
+                                            data-aos-delay="500"
                                             className='flex items-center'>
                                             <GrMapLocation /><p className='pl-4'>{property.location}</p>
                                         </div>
@@ -93,11 +93,12 @@ const Estates = ({ properties }) => {
                                         <h3
                                             className='card-title'
                                             data-aos="fade-left"
-                                            data-aos-delay="950"
+                                            data-aos-delay="550"
                                         >Facalities:</h3>
                                         <ul
                                             data-aos="fade-left"
-                                            data-aos-delay="1000"
+                                            data-aos-delay="600"
+                                            data-aos-anchor-placement="top-bottom"
                                             className='list-disc ml-6 pl-3'>
                                             {property.facilities.map((facility, key) => {
                                                 return <li key={key}>{facility}</li>
@@ -106,7 +107,8 @@ const Estates = ({ properties }) => {
 
                                         <div
                                             data-aos="fade-left"
-                                            data-aos-delay="1050"
+                                            data-aos-delay="650"
+                                            data-aos-anchor-placement="top-bottom"
                                             className="card-actions justify-end">
                                             <Link to={`/estateDetail/${property?.id}`}>
                                                 <button className="btn btn-primary justify-end">View Property</button>
@@ -120,12 +122,11 @@ const Estates = ({ properties }) => {
                                 (
                                     <div
                                         data-aos="fade-left"
-                                        data-aos-duration="2000"
                                         className="card card-side bg-base-100 my-5 flex-col lg:flex-row drop-shadow-2xl justify-around" key={key}>
                                         <figure className='w-full grow'>
                                             <img
                                                 data-aos="zoom-in"
-                                                data-aos-delay="300"
+                                                data-aos-delay="100"
                                                 data-aos-easing="ease-in-sine"
                                                 className='p-4 md:p-12 rounded-[2rem] md:rounded-[4rem] grow h-full'
                                                 src={property.image}
@@ -136,14 +137,14 @@ const Estates = ({ properties }) => {
 
                                             <h2
                                                 data-aos="fade-left"
-                                                data-aos-delay="400"
+                                                data-aos-delay="150"
                                                 className="card-title ">{property.estate_title}</h2>
                                             {
                                                 property.description.length > 500 ?
                                                     (
                                                         <p
                                                             data-aos="fade-left"
-                                                            data-aos-delay="500"
+                                                            data-aos-delay="200"
                                                         >
                                                             {property.description.slice(0, 200)}...<button>See more</button>
                                                         </p>
@@ -151,7 +152,7 @@ const Estates = ({ properties }) => {
                                                     :
                                                     (
                                                         <p
-                                                            data-aos-delay="600"
+                                                            data-aos-delay="250"
                                                         >
                                                             {property.description}
                                                         </p>
@@ -160,31 +161,31 @@ const Estates = ({ properties }) => {
 
                                             <div
                                                 data-aos="fade-left"
-                                                data-aos-delay="700"
+                                                data-aos-delay="300"
                                                 className='flex items-center'>
                                                 <MdDriveFileRenameOutline /><p className='pl-4'>{property.segment_name}</p>
                                             </div>
                                             <div
                                                 data-aos="fade-left"
-                                                data-aos-delay="800"
+                                                data-aos-delay="350"
                                                 className='flex items-center'>
                                                 <IoPricetagOutline /><h2 className='pl-4'>${property.price}</h2>
                                             </div>
                                             <div
                                                 data-aos="fade-left"
-                                                data-aos-delay="900"
+                                                data-aos-delay="400"
                                                 className='flex items-center'>
                                                 <GoChecklist /><p className='pl-4'>Status: {property.status}</p>
                                             </div>
                                             <div
                                                 data-aos="fade-left"
-                                                data-aos-delay="1000"
+                                                data-aos-delay="450"
                                                 className='flex items-center'>
                                                 <BiArea /><p className='pl-4'>{property.area}</p>
                                             </div>
                                             <div
                                                 data-aos="fade-left"
-                                                data-aos-delay="1100"
+                                                data-aos-delay="500"
                                                 className='flex items-center'>
                                                 <GrMapLocation /><p className='pl-4'>{property.location}</p>
                                             </div>
@@ -192,11 +193,12 @@ const Estates = ({ properties }) => {
                                             <h3
                                                 className='card-title'
                                                 data-aos="fade-left"
-                                                data-aos-delay="1150"
+                                                data-aos-delay="550"
                                             >Facalities:</h3>
                                             <ul
                                                 data-aos="fade-left"
-                                                data-aos-delay="1200"
+                                                data-aos-delay="600"
+                                                data-aos-anchor-placement="top-bottom"
                                                 className='list-disc ml-6 pl-3'>
                                                 {property.facilities.map((facility, key) => {
                                                     return <li key={key}>{facility}</li>
@@ -206,7 +208,8 @@ const Estates = ({ properties }) => {
                                             <div
 
                                                 data-aos="fade-left"
-                                                data-aos-delay="1250"
+                                                data-aos-delay="650"
+                                                data-aos-anchor-placement="top-bottom"
                                                 className="card-actions justify-end">
                                                 <Link to={`/estateDetail/${property?.id}`}>
                                                     <button className="btn btn-primary justify-end">View Property</button>
