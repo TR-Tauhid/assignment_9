@@ -13,7 +13,7 @@ const Root = () => {
 
     
 return (
-    <div>
+    <div className="overflow-hidden">
         <Navbar></Navbar>
         <Outlet></Outlet>
         <Footer></Footer>

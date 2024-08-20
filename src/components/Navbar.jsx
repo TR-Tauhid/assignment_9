@@ -1,22 +1,27 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleSignOutBtn = () => {
+        logOut();
+    }
 
     const links =
         <>
             <li> <Link to="/">Home</Link></li>
-            <li>
-                <Link to="/updateprofile">Update Profile</Link>
-
-            </li>
+            <li><Link to="/estateDetail/:1">Estate Detail</Link></li>
+            <li><Link to="/updateprofile">Update Profile</Link></li>
             <li><Link to="/login">Login</Link></li>
             <li><Link to="/register">Register</Link></li>
-            <li><Link to="/estateDetail">Estate Detail</Link></li>
         </>
     return (
         <div>
-            <div className="navbar bg-base-100 mx-auto w-11/12">
-                <div className="navbar-start">
+            <div className="navbar bg-base-100 justify-between mx-auto w-11/12">
+                <div className="navbar-start w-full">
 
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,21 +43,37 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <div className="w-32 h-20 items-center flex">
-                        <a><img src="/src/assets/logo.svg" alt="logo" /> </a>
+                    <div className="w-full items-center flex justify-around md:justify-normal">
+                        <Link to="/" className="h-32 w-32 lg:min-w-0 md:ml-6" ><img src="/src/assets/logo.png" alt="logo" /> </Link>
                     </div>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 gap-x-4 mr-10">
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <button className="btn">Login</button>
-                </div>
+
+                {
+                    user ?
+
+                        (
+                            <div onClick={handleSignOutBtn} className="navbar-end w-auto">
+                                <button className="btn btn-ghost">Log Out</button>
+                            </div>
+                        )
+                        :
+                        (
+                            <div className="navbar-end w-auto">
+                                <Link to="/login">
+                                    <button className="btn btn-ghost">Login</button>
+                                </Link>
+                            </div>
+
+                        )
+                }
             </div>
-        </div>
+        </div >
     );
 };
 

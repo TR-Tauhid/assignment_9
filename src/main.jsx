@@ -14,7 +14,8 @@ import Login from './components/Login';
 import Register from './components/Register';
 import EstateDetail from './components/EstateDetail';
 import UpdateProfile from './components/UpdateProfile';
-
+import AuthProvider from './provider/AuthProvider';
+import PrivateRouter from './routes/PrivateRouter';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,14 +23,17 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        loader: () => {
-          return  properties ;
-        },
+        loader: () => properties,
         element: <Home></Home>,
       },
       {
-        path: "/estateDetail",
-        element: <EstateDetail></EstateDetail>
+        path: "/estateDetail/:id",
+        loader: ({ params }) => {
+          const propertyId = params.id;
+          const property = properties.find(prop => prop.id == propertyId)
+          return property ? property : null ;
+        },
+        element: <PrivateRouter><EstateDetail></EstateDetail></PrivateRouter>
       },
       {
         path: "/login",
@@ -41,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/updateProfile",
-        element: <UpdateProfile></UpdateProfile>
+        element: <PrivateRouter><UpdateProfile></UpdateProfile></PrivateRouter>
       },
     ]
   },
@@ -50,6 +54,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

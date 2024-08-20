@@ -55,7 +55,7 @@ const Slide = ({ properties }) => {
                 key={key}
                 id={property.id} >
                 <img
-                  className={`w-full h-[40vh] mt-4 object-cover px-5`}
+                  className={`w-full h-[40vh] object-cover px-5`}
                   src={property.image}
                   alt={`${property.name} image`}
                 />

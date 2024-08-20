@@ -13,3 +13,12 @@
   background-repeat: no-repeat;
   z-index: 0;
 }
+
+.slick-arrow {
+  height: 90% !important;
+  width: 3vw !important;
+}
+
+.slick-arrow:hover {
+  background-color: #ae00ff !important;
+}
