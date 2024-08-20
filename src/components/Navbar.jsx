@@ -1,18 +1,20 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleSignOutBtn = () => {
         logOut();
+        navigate("/")
     }
 
     const links =
         <>
-            <li> <Link to="/">Home</Link></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/estateDetail/:1">Estate Detail</Link></li>
             <li><Link to="/updateprofile">Update Profile</Link></li>
             <li><Link to="/login">Login</Link></li>

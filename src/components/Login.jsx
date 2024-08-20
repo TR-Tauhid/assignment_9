@@ -3,10 +3,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { ImGithub } from "react-icons/im";
 import { FcGoogle } from "react-icons/fc";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
 
-    const { emailSginIn, googleSignIn, githubSignIn, passReset } = useContext(AuthContext);
+    const { emailSginIn, googleSignIn, githubSignIn, notifySuccess, notifyWarning } = useContext(AuthContext);
     const emailRef = useRef(null);
     const navigate = useNavigate();
     const location = useLocation();
@@ -15,6 +16,7 @@ const Login = () => {
 
         googleSignIn()
             .then((res) => {
+                notifySuccess('Welcome ...!!!')
                 if (res) {
                     if (!location.state) {
                         navigate('/')
@@ -25,7 +27,7 @@ const Login = () => {
                 }
             })
             .catch(err => {
-                console.error(err)
+                notifyWarning(err.message)
             })
     }
 
@@ -33,20 +35,19 @@ const Login = () => {
 
         githubSignIn()
             .then(res => {
-                console.log('location in login', location)
-
+                notifySuccess('Welcome...!!!')
                 if (res) {
                     if (!location.state) {
                         navigate('/');
                     }
                     else {
-                        navigate(location.state);;
+                        navigate(location.state);
                     }
                 }
             }
             )
             .catch(err => {
-                console.log(err);
+                notifyWarning(err.message);
             })
     }
 
@@ -59,6 +60,7 @@ const Login = () => {
 
         emailSginIn(email, password)
             .then((res) => {
+                notifySuccess("Welcome...!!!")
                 if (res) {
                     if (!location.state) {
                         navigate('/')
@@ -70,23 +72,18 @@ const Login = () => {
             }
             )
             .catch(err => {
-                console.error(err);
+                notifyWarning(err.message);
             })
     }
 
-    const handleForgotPass = () => {
-        const email = emailRef.current.value;
-        console.log(email)
-        passReset(email)
-            .then(console.log('email sent'))
-            .catch(err => {
-                console.error(err)
-            })
-    }
+    
 
     return (
 
         <div>
+            <Helmet>
+                <title>Home | Login</title>
+            </Helmet>
             <div className="hero my-6 md:my-12">
                 <div className="hero-content flex-col lg:flex-row-reverse justify-around">
                     <div className="text-center lg:text-left md:max-w-[50%]">
@@ -110,9 +107,7 @@ const Login = () => {
                                     <span className="label-text">Password</span>
                                 </label>
                                 <input name="password" type="password" placeholder="Password" className="input input-bordered" required />
-                                <label className="label">
-                                    <Link onClick={handleForgotPass} className="label-text-alt link link-hover btn-link">Forgot password?</Link>
-                                </label>
+
                             </div>
 
                             <div className="form-control mt-6">

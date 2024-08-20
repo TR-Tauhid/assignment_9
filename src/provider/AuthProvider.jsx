@@ -1,5 +1,6 @@
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, sendPasswordResetEmail, GithubAuthProvider } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, sendPasswordResetEmail, GithubAuthProvider, updateProfile } from "firebase/auth";
 import { PropTypes } from "prop-types";
+import { Bounce, toast } from "react-toastify";
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
 
@@ -49,10 +50,40 @@ const AuthProvider = ({ children }) => {
         return signOut(auth)
     }
 
-    const passReset = (email) => {
-        sendPasswordResetEmail(auth, email);
+    const updateUserProfile = (name, photoUrl) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: photoUrl,
+        })
     }
 
+    
+    const notifyWarning = (message) => {
+        toast.warn(message, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
+    }
+
+    const notifySuccess = (message) => {
+        toast(message, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
+    }
 
     const authValue = {
         user,
@@ -62,8 +93,12 @@ const AuthProvider = ({ children }) => {
         createUserWithEmail,
         githubSignIn,
         logOut,
-        passReset,
+        updateUserProfile,
+        notifyWarning,
+        notifySuccess,
     }
+
+
     return (
         <AuthContext.Provider value={authValue}>
             {children}

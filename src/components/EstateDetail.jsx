@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { BiArea } from "react-icons/bi";
 import { FaHandPointRight } from "react-icons/fa";
 import { GoChecklist } from "react-icons/go";
@@ -14,6 +15,11 @@ const EstateDetail = () => {
         console.log('property worked')
         return (
             <div className="mx-auto text-center w-full ">
+
+                <Helmet>
+                    <title>Home | Estate Details</title>
+                </Helmet>
+                
                 <h1 className="mt-16">
                     Please select a property to view details...!!!
                 </h1>
@@ -38,11 +44,11 @@ const EstateDetail = () => {
                                 src={property.image}
                                 alt={property.name} />
                         </figure>
-                        <div className="card-body text-left ">
+                        <div className="card-body text-left">
 
                             <h2
-                                className="font-bold text-5xl text-center my-4">{property.estate_title}</h2>
-                            <p className="px-10 leading-relaxed text-justify">
+                                className="font-bold text-3xl md:text-5xl text-center my-4">{property.estate_title}</h2>
+                            <p className="md:px-10 md:leading-relaxed text-justify">
                                 {property.description}
                             </p>
 

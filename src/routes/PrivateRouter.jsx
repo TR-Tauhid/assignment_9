@@ -8,7 +8,6 @@ const PrivateRouter = ({ children }) => {
 
 
     const { user, loading } = useContext(AuthContext);
-    console.log(location)
 
     if (loading) {
         return <Loader></Loader>

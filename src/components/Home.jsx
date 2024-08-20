@@ -15,13 +15,13 @@ function SetViewOnClick({ animateRef }) {
     })
     return null
 }
+
+
 const Home = () => {
 
     const animateRef = useRef(false)
     const position = [23.8138, 90.4250];
-
     const properties = useLoaderData();
-
 
     return (
 
