@@ -47,7 +47,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="w-full items-center flex justify-around md:justify-normal">
-                        <Link to="/" className="h-32 w-32 lg:min-w-0 md:ml-6" ><img src="/src/assets/logo.png" alt="logo" /> </Link>
+                        <Link to="/" className="h-32 w-32 lg:min-w-0 md:ml-6" ><img src="https://i.postimg.cc/90hfVBLN/logo.png" alt="logo" /> </Link>
                     </div>
                 </div>
 

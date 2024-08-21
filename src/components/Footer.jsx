@@ -24,7 +24,7 @@ const Footer = () => {
 
                         <Link className="max-w-80" to="/">
                             <img
-                                src="/src/assets/logoFooter.png" alt="logo" />
+                                src="https://i.postimg.cc/15R9HX26/logo-Footer.png" alt="logo footer" />
                         </Link>
                     </div>
 
