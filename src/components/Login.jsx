@@ -1,9 +1,11 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { ImGithub } from "react-icons/im";
 import { FcGoogle } from "react-icons/fc";
 import { Helmet } from "react-helmet-async";
+import { LuEyeOff } from "react-icons/lu";
+import { FaRegEye } from "react-icons/fa";
 
 const Login = () => {
 
@@ -11,6 +13,7 @@ const Login = () => {
     const emailRef = useRef(null);
     const navigate = useNavigate();
     const location = useLocation();
+    const [passToggle, setPassToggle] = useState(true);
 
     const handleGoogleBtn = () => {
 
@@ -76,7 +79,7 @@ const Login = () => {
             })
     }
 
-    
+
 
     return (
 
@@ -106,8 +109,33 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input name="password" type="password" placeholder="Password" className="input input-bordered" required />
-
+                                <div
+                                    className="
+                                        flex 
+                                        w-full 
+                                        outline-double 
+                                        bg-[#E8F0FE] 
+                                        outline-[#b6b5b5] 
+                                        outline-1 
+                                        rounded-lg 
+                                        grow items-center 
+                                        justify-between">
+                                    <input
+                                        name="password"
+                                        type={passToggle ? `password` : `text`}
+                                        placeholder="Password"
+                                        className="w-4/5 grow bg-none outline-none-input p-2 py-3 rounded-lg pl-4 bg-[#E8F0FE]" required />
+                                    <button
+                                        title="button"
+                                        className="min-w-5 text-2xl pr-2"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            console.log("Pass", passToggle);
+                                            setPassToggle(!passToggle);
+                                        }}>
+                                        {passToggle ? <LuEyeOff /> : <FaRegEye />}
+                                    </button>
+                                </div>
                             </div>
 
                             <div className="form-control mt-6">

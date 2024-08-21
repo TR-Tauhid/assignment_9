@@ -17,10 +17,13 @@ import UpdateProfile from './components/UpdateProfile';
 import AuthProvider from './provider/AuthProvider';
 import PrivateRouter from './routes/PrivateRouter';
 import { HelmetProvider } from 'react-helmet-async';
+import ErrorPage from './components/ErrorPage';
+import YourProfile from './components/YourProfile';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -34,19 +37,23 @@ const router = createBrowserRouter([
           const property = properties.find(prop => prop.id == propertyId)
           return property ? property : null;
         },
-        element: <PrivateRouter><EstateDetail></EstateDetail></PrivateRouter>
+        element: <PrivateRouter><EstateDetail></EstateDetail></PrivateRouter>,
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
       {
         path: "/register",
-        element: <Register></Register>
+        element: <Register></Register>,
       },
       {
         path: "/updateProfile",
-        element: <PrivateRouter><UpdateProfile></UpdateProfile></PrivateRouter>
+        element: <PrivateRouter><UpdateProfile></UpdateProfile></PrivateRouter>,
+      },
+      {
+        path: "/yourProfile",
+        element: <PrivateRouter><YourProfile></YourProfile></PrivateRouter>,
       },
     ]
   },

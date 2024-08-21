@@ -17,6 +17,7 @@ const Navbar = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/estateDetail/:1">Estate Detail</Link></li>
             <li><Link to="/updateprofile">Update Profile</Link></li>
+            <li><Link to="/yourProfile">Your Profile</Link></li>
             <li><Link to="/login">Login</Link></li>
             <li><Link to="/register">Register</Link></li>
         </>
