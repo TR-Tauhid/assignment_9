@@ -9,7 +9,7 @@ import { FaRegEye } from "react-icons/fa";
 
 const Login = () => {
 
-    const { emailSginIn, googleSignIn, githubSignIn, notifySuccess, notifyWarning } = useContext(AuthContext);
+    const { emailSignIn, googleSignIn, githubSignIn, notifySuccess, notifyWarning } = useContext(AuthContext);
     const emailRef = useRef(null);
     const navigate = useNavigate();
     const location = useLocation();
@@ -61,7 +61,7 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
 
-        emailSginIn(email, password)
+        emailSignIn(email, password)
             .then((res) => {
                 notifySuccess("Welcome...!!!")
                 if (res) {
@@ -147,7 +147,9 @@ const Login = () => {
                                 <Link state={location.state} to="/register" className="btn btn-link text-center w-full">Don&apos;t have an account? Register.</Link>
                             </div>
                         </form>
-
+                        <div className="py-3 text-center w-full">
+                            <h1>Or, Continue with</h1>
+                        </div>
                         <div className="flex justify-around mb-8 w-full">
                             <div className="flex grow justify-around items-center"> <button onClick={handleGoogleBtn} className="rounded-badge shadow-indigo-500/50 shadow-xl border-blue-400 border hover:bg-green-200 p-8 text-4xl"><FcGoogle /></button></div>
                             <div className="flex grow justify-around items-center"> <button onClick={handleGithubBtn} className="rounded-badge shadow-indigo-500/50 shadow-xl border-blue-400 border hover:bg-green-200 p-8 text-4xl"><ImGithub /></button></div>

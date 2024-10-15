@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, sendPasswordResetEmail, GithubAuthProvider, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, GithubAuthProvider, updateProfile } from "firebase/auth";
 import { PropTypes } from "prop-types";
 import { Bounce, toast } from "react-toastify";
 import { createContext, useEffect, useState } from "react";
@@ -18,7 +18,7 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, googleProvider);
     }
 
-    const emailSginIn = (email, password) => {
+    const emailSignIn = (email, password) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
@@ -38,7 +38,6 @@ const AuthProvider = ({ children }) => {
         const userStatus = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
             setLoading(false);
-            console.log("on auth change user status: ", currentUser);
         })
 
         return () => userStatus();
@@ -89,7 +88,7 @@ const AuthProvider = ({ children }) => {
         user,
         loading,
         googleSignIn,
-        emailSginIn,
+        emailSignIn,
         createUserWithEmail,
         githubSignIn,
         logOut,
